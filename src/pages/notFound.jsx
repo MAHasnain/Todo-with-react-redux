@@ -1,5 +1,5 @@
 import { Container, Typography, Button } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 const NotFound = () => {
   return (
@@ -12,12 +12,7 @@ const NotFound = () => {
         The page you’re looking for doesn’t exist.
       </Typography>
 
-      <Button
-        component={Link}
-        to="/"
-        variant="contained"
-        sx={{ mt: 4 }}
-      >
+      <Button component={Link} to="/" variant="contained" sx={{ mt: 4 }}>
         Go Back Home
       </Button>
     </Container>

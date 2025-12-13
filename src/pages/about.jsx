@@ -8,7 +8,7 @@ const About = () => {
       </Typography>
 
       <Typography color="text.secondary" sx={{ mt: 2 }}>
-        TaskFlow is a practice-driven project focused on mastering modern
+        TaskFlow is a practice-driven   project focused on mastering modern
         frontend development concepts like state management, component-based
         architecture, and scalable UI design.
       </Typography>

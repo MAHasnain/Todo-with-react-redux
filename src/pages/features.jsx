@@ -2,7 +2,7 @@ import { Container, Typography, List, ListItem } from "@mui/material";
 
 const Features = () => {
   return (
-    <Container maxWidth="md" sx={{ mt: 8 }}>
+    <Container maxWidth="md" sx={{ mt: 8 }} className="">
       <Typography variant="h4" fontWeight="bold" gutterBottom>
         Key Features
       </Typography>
