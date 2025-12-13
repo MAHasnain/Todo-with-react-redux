@@ -4,7 +4,7 @@ const FooterNav = () => {
   return (
     <>
       <Footer container>
-        <FooterCopyright href="#" by="Flowbite™" year={2022} />
+        <FooterCopyright href="#" by="TaskFlow™" year={2025} />
         <FooterLinkGroup>
           <FooterLink href="#">About</FooterLink>
           <FooterLink href="#">Privacy Policy</FooterLink>
