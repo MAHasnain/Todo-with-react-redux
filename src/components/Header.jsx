@@ -28,12 +28,10 @@ const Header = () => {
         <NavbarToggle />
       </div>
       <NavbarCollapse>
-        <NavbarLink href="/">
-          Home
-        </NavbarLink>
-        <NavbarLink href="about">About</NavbarLink>
-        <NavbarLink href="all-todos">My Todos</NavbarLink>
-        <NavbarLink href="add-todo">New Todo</NavbarLink>
+        <Link className="text-white" to="/">Home</Link>
+        <Link className="text-white" to="about">About</Link>
+        <Link className="text-white" to="all-todos">My Todos</Link>
+        <Link className="text-white" to="add-todo">New Todo</Link>
       </NavbarCollapse>
     </Navbar>
   );
