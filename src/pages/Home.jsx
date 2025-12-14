@@ -1,4 +1,5 @@
 import { Container, Typography, Button, Stack } from "@mui/material";
+import { Link } from "react-router";
 
 const Home = () => {
   return (
@@ -19,10 +20,17 @@ const Home = () => {
 
       <Stack direction="row" spacing={2} justifyContent="center" sx={{ mt: 5 }}>
         <Button variant="contained" size="large">
-          Get Started
+          <Link
+            to="/add-todo"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Get Started
+          </Link>
         </Button>
         <Button variant="outlined" size="large">
-          Learn More
+          <Link to="/about" style={{ textDecoration: "none" }}>
+            Learn More
+          </Link>
         </Button>
       </Stack>
     </Container>

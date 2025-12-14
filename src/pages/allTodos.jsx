@@ -15,7 +15,7 @@ const AllTodos = () => {
   console.log(todos);
   return (
     <>
-      <div className=" p-4 min-h-screen  flex flex-col items-center ">
+      <div className="p-4 min-h-screen flex flex-col items-center ">
         <List sx={{ width: "100%", maxWidth: 900, mx: "auto", mt: 4 }}>
           {todos.map((todo) => (
             <ListItem
