@@ -6,7 +6,7 @@ import {
   NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 const Header = () => {
   return (
@@ -27,17 +27,17 @@ const Header = () => {
       </div>
 
       {/* Mobile + Desktop Menu */}
-      <NavbarCollapse>
-        <NavbarLink as={Link} to="/">
+      <NavbarCollapse className="bg-gray-900 md:bg-transparent rounded-lg">
+        <NavbarLink as={Link} to="/" className="navItems">
           Home
         </NavbarLink>
-        <NavbarLink as={Link} to="/about">
+        <NavbarLink as={Link} to="/about" className="navItems">
           About
         </NavbarLink>
-        <NavbarLink as={Link} to="/all-todos">
+        <NavbarLink as={Link} to="/all-todos" className="navItems">
           My Todos
         </NavbarLink>
-        <NavbarLink as={Link} to="/add-todo">
+        <NavbarLink as={Link} to="/add-todo" className="navItems">
           New Todo
         </NavbarLink>
       </NavbarCollapse>
