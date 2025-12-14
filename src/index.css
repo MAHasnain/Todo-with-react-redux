@@ -2,9 +2,9 @@
 @import "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
 
-.navItems {
+/* .navItems {
   @apply "text-white md:text-gray-700 dark:md:text-white";
-}
+} */
 
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

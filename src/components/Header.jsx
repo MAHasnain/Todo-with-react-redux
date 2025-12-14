@@ -28,16 +28,32 @@ const Header = () => {
 
       {/* Mobile + Desktop Menu */}
       <NavbarCollapse className="bg-gray-900 md:bg-transparent rounded-lg">
-        <NavbarLink as={Link} to="/" className="navItems">
+        <NavbarLink
+          as={Link}
+          to="/"
+          className="text-white md:text-gray-700 dark:md:text-white"
+        >
           Home
         </NavbarLink>
-        <NavbarLink as={Link} to="/about" className="navItems">
+        <NavbarLink
+          as={Link}
+          to="/about"
+          className="text-white md:text-gray-700 dark:md:text-white"
+        >
           About
         </NavbarLink>
-        <NavbarLink as={Link} to="/all-todos" className="navItems">
+        <NavbarLink
+          as={Link}
+          to="/all-todos"
+          className="text-white md:text-gray-700 dark:md:text-white"
+        >
           My Todos
         </NavbarLink>
-        <NavbarLink as={Link} to="/add-todo" className="navItems">
+        <NavbarLink
+          as={Link}
+          to="/add-todo"
+          className="text-white md:text-gray-700 dark:md:text-white"
+        >
           New Todo
         </NavbarLink>
       </NavbarCollapse>
