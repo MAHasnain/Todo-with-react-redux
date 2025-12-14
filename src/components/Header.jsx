@@ -6,32 +6,40 @@ import {
   NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <Navbar fluid rounded>
-      <NavbarBrand href="/">
-        {/* <img
-          src="/favicon.svg"
-          className="mr-3 h-6 sm:h-9"
-          alt="ToDo"
-        /> */}
+      {/* Logo / Brand */}
+      <NavbarBrand as={Link} to="/">
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
           TaskFlow
         </span>
       </NavbarBrand>
+
+      {/* Right side (Button + Toggle) */}
       <div className="flex md:order-2">
-        <Button>
-          <Link to="/" /> Get started
+        <Button as={Link} to="/">
+          Get started
         </Button>
         <NavbarToggle />
       </div>
+
+      {/* Mobile + Desktop Menu */}
       <NavbarCollapse>
-        <Link className="text-white" to="/">Home</Link>
-        <Link className="text-white" to="about">About</Link>
-        <Link className="text-white" to="all-todos">My Todos</Link>
-        <Link className="text-white" to="add-todo">New Todo</Link>
+        <NavbarLink as={Link} to="/">
+          Home
+        </NavbarLink>
+        <NavbarLink as={Link} to="/about">
+          About
+        </NavbarLink>
+        <NavbarLink as={Link} to="/all-todos">
+          My Todos
+        </NavbarLink>
+        <NavbarLink as={Link} to="/add-todo">
+          New Todo
+        </NavbarLink>
       </NavbarCollapse>
     </Navbar>
   );
